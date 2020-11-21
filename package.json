@@ -1,0 +1,40 @@
+{
+  "name": "nodefuncs",
+  "version": "1.0.0",
+  "description": "A package for helper and middleware functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devang9/nodefuncs.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "functional",
+    "programming",
+    "javascript",
+    "array"
+  ],
+  "author": {
+    "name": "DevangChheda DharmikPanchal",
+    "email": "devangchheda97@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Devang Chheda",
+      "email": "devangchheda97@gmail.com"
+    },
+    {
+      "name": "DharmikPanchal",
+      "email": "dharmikp572@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devang9/nodefuncs/issues"
+  },
+  "homepage": "https://github.com/devang9/nodefuncs#readme"
+}
