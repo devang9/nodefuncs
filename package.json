@@ -2,7 +2,8 @@
   "name": "nodefuncs",
   "version": "1.0.0",
   "description": "A package for helper and middleware functions",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -36,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/devang9/nodefuncs/issues"
   },
-  "homepage": "https://github.com/devang9/nodefuncs#readme"
+  "homepage": "https://github.com/devang9/nodefuncs#readme",
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
 }
