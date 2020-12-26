@@ -19,4 +19,4 @@ export function findInObjectorIterable(
     return false;
 }
 //Testing
-console.log(findInObjectorIterable({ name: "dev" }, "dev"));
+//console.log(findInObjectorIterable({ name: "dev" }, "dev"));
