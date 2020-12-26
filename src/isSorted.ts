@@ -1,7 +1,7 @@
 export function isSorted(
     arr: Array<any>,
-    order?: number, // 1 = ascending check, other all = descending check
-    compareFunction?: Function // function for compare logic, else defaultCompareFunction will be used
+    isAscending: boolean = true,
+    compareFunction?: (arg1, arg2) => number // function for compare logic, else defaultCompareFunction will be used
 ): boolean {
     if (!Array.isArray(arr)) {
         throw new TypeError('Argument arr must be of type Array');
@@ -17,9 +17,6 @@ export function isSorted(
     if (compareFunction && !(typeof compareFunction === 'function')) {
         throw new TypeError('Argument compareFunction must be of type Function');
     }
-    if (!order) { // if order is not provided, set it to ascending by default
-        order = 1;
-    }
     let O = Object(arr);
     let len = O.length >>> 0;
     let checker; // compareFunction
@@ -29,7 +26,7 @@ export function isSorted(
     else {
         checker = defaultCompareFunction;
     }
-    if (order === 1) {
+    if (isAscending) {
         for (let k = 0; k < len - 1; k++) {
             if (checker(O[k], O[k + 1]) > 0) {
                 return false;
@@ -47,7 +44,7 @@ export function isSorted(
     return true;
 }
 
-function defaultCompareFunction(a, b) {
+function defaultCompareFunction(a, b): number {
     if (a < b) {
         return -1;
     }
@@ -57,3 +54,13 @@ function defaultCompareFunction(a, b) {
     return 0;
 }
 
+//Testing
+// console.log(isSorted([2, 3, 4], true, function (a, b) {
+//     if (a < b) {
+//         return -1;
+//     }
+//     if (a > b) {
+//         return 1;
+//     }
+//     return 0;
+// }))
