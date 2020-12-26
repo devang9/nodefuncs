@@ -1,2 +1,2 @@
 # nodefuncs
-A package for helper and middleware functions
+A package for helper functions
