@@ -102,3 +102,5 @@ dist
 
 # TernJS port file
 .tern-port
+reports/junit.xml
+reports/test-report.html

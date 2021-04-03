@@ -13,7 +13,6 @@ export function replaceInArray(
   let O = Object(arr);
   let len = O.length >>> 0;
   let A: Array<any> = new Array(len);
-  let k = 0;
   for (let k = 0; k < len; k++) {
     if (k in O) {
       let kValue = O[k];
