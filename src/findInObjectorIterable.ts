@@ -3,6 +3,9 @@ export function findInObjectorIterable(
     toFind: string | number,
     checkforSubstring: boolean = false
 ): boolean {
+    if (!(typeof complexObj === 'object' || typeof complexObj === 'string')) {
+        throw new TypeError('Argument complexObj must be of type object or string');
+    }
     for (const key of Object.keys(complexObj)) {
         let currentItem = complexObj[key];
         if (typeof currentItem === "object") {
