@@ -9,7 +9,7 @@ describe("isSorted", () => {
         );
     });
     test("Check sorted ascending", () => {
-        const inpArr = [1, 2, 3];
+        const inpArr = [1, 2, 3, 3];
         const output = isSorted(inpArr);
         expect(output).toBeTruthy();
     });
