@@ -104,3 +104,5 @@ dist
 .tern-port
 reports/junit.xml
 reports/test-report.html
+
+reports
