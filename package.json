@@ -2,10 +2,11 @@
   "name": "nodefuncs",
   "version": "1.0.0",
   "description": "A package for helper and middleware functions",
-  "main": "dist/index.js",
+  "main": "index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
